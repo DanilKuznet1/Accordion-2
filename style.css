@@ -74,9 +74,8 @@ body {
 }
 
 /* ********************************* */
-/* QQQQQQBEBFKSBVEFKNVEJKSVKEVFFFFFF */
+/* GENERAL STYLES */
 /* ********************************* */
-
 .container {
   max-width: 120rem;
   height: 100vh;
@@ -87,24 +86,56 @@ body {
   align-items: center;
 }
 
+/* ********************************* */
+/* ACCORDION CONTAINER */
+/* ********************************* */
 .accordion {
-  width: 35rem;
+  width: 65rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
+/* ********************************* */
+/* ACCORDION HEADER */
+/* ********************************* */
 .accordion .card header {
   padding: 1.5rem 1rem;
   border: 2px solid #333;
 
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.accordion .card main {
-  border: 2px solid #333;
-  border-top: none;
+.card-header-text {
+  font-size: 1.8rem;
 }
 
 .card-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   stroke: #fff;
   background-color: #333;
-} 
+}
+
+/* ********************************* */
+/* ACCORDION BODY */
+/* ********************************* */
+.card-body {
+  border: 2px solid #333;
+  border-top: none;
+  padding: 3rem 2rem;
+}
+
+.card-body-text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.card-body--1,
+.card-body--2,
+.card-body--3 {
+  display: none;
+}
